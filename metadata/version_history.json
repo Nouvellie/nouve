@@ -1,0 +1,27 @@
+{
+    "history": [
+        {
+            "current_version": "0.0.1",
+            "date": "2024-11-18",
+            "changes": [
+                "Project created.",
+                "Struct created."
+            ]
+        },
+        {
+            "current_version": "0.0.2",
+            "date": "2024-11-18",
+            "changes": [
+                "Dockerfile added.",
+                "Nginx/gunicorn/requirements added."
+            ]
+        },
+        {
+            "current_version": "0.0.3",
+            "date": "2024-11-18",
+            "changes": [
+                "Update version script added."
+            ]
+        }
+    ]
+}
