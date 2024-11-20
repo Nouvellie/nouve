@@ -2,6 +2,7 @@
 import os
 
 # Third-party imports
+from datetime import timedelta
 from decouple import config
 from pathlib import Path
 
@@ -34,9 +35,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
 }
-
-# JWT Configuration (optional, customize as needed)
-from datetime import timedelta
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=30),

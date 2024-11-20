@@ -40,3 +40,19 @@ class UpdateChampions(APIView):
             print(full_traceback)
             save_api_logs(endpoint="http://127.0.0.1:8000/api/riot/update/champions", err=full_traceback, code=400)
             return Response({'err': 'Champion update failed.', 'status': False}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UpdateSummoner(APIView):
+
+    RIOT_KEY = config('RIOT_KEY', default='unsafe-secret-key')
+
+    def post(self, request, format=None):
+        try:
+            summoner_name = request.data.get('summoner_name').replace('#', '/')
+            region = request.data.get('region'
+            )
+            data1 = url_req.get(f"https://{region}.api.riotgames.com/riot/account/v1/accounts/by-riot-id/{summoner_name}?api_key={self.RIOT_KEY}").json()
+            return Response(data1,status=status.HTTP_200_OK)
+        except:
+            # pass
+            return Response(status=status.HTTP_400_BAD_REQUEST)

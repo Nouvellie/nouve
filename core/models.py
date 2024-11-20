@@ -43,3 +43,21 @@ class APILog(models.Model):
     class Meta:
         db_table = 'apilog'
         managed = True
+
+
+class SummonerChart(models.Model):
+    puuid
+    gameName
+    tagLine
+    summonerid https://la2.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/kzsMmNAH4GCNjPnprQ4pK5uuqHtVeiLXwPMtNxg_vgRvPeCmClTGZNBfDve1ginEnR_TccRqDE1o1Q?api_key=RGAPI-0cf603aa-48be-45dd-8a29-db889de48139
+    accoundid https://la2.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/kzsMmNAH4GCNjPnprQ4pK5uuqHtVeiLXwPMtNxg_vgRvPeCmClTGZNBfDve1ginEnR_TccRqDE1o1Q?api_key=RGAPI-0cf603aa-48be-45dd-8a29-db889de48139
+    mastery_level https://la2.api.riotgames.com/lol/champion-mastery/v4/scores/by-puuid/kzsMmNAH4GCNjPnprQ4pK5uuqHtVeiLXwPMtNxg_vgRvPeCmClTGZNBfDve1ginEnR_TccRqDE1o1Q?api_key=RGAPI-0cf603aa-48be-45dd-8a29-db889de48139
+    high_champ_mastery https://la2.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-puuid/kzsMmNAH4GCNjPnprQ4pK5uuqHtVeiLXwPMtNxg_vgRvPeCmClTGZNBfDve1ginEnR_TccRqDE1o1Q/top?count=3&api_key=RGAPI-0cf603aa-48be-45dd-8a29-db889de48139
+    challenges_point https://la2.api.riotgames.com/lol/challenges/v1/player-data/kzsMmNAH4GCNjPnprQ4pK5uuqHtVeiLXwPMtNxg_vgRvPeCmClTGZNBfDve1ginEnR_TccRqDE1o1Q?api_key=RGAPI-0cf603aa-48be-45dd-8a29-db889de48139
+    accountdata https://la2.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/kzsMmNAH4GCNjPnprQ4pK5uuqHtVeiLXwPMtNxg_vgRvPeCmClTGZNBfDve1ginEnR_TccRqDE1o1Q?api_key=RGAPI-0cf603aa-48be-45dd-8a29-db889de48139
+    soloQ data https://la2.api.riotgames.com/lol/league/v4/entries/by-summoner/0EKlJo3T6T116BfaJudnTD6iRoeAWTmUKTYvx5f9fozd?api_key=RGAPI-0cf603aa-48be-45dd-8a29-db889de48139
+    profile icon https://la2.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/kzsMmNAH4GCNjPnprQ4pK5uuqHtVeiLXwPMtNxg_vgRvPeCmClTGZNBfDve1ginEnR_TccRqDE1o1Q?api_key=RGAPI-0cf603aa-48be-45dd-8a29-db889de48139
+    class Meta:
+        db_table = 'summonerchart'
+        managed = True
+
