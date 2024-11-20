@@ -1,7 +1,12 @@
 {
-    "current_version": "0.0.3",
-    "date": "2024-11-18",
+    "current_version": "0.0.5",
+    "date": "2024-11-20",
     "changes": [
-        "Update version script added."
+        "Makemigrations and migrate applied.",
+        "Pep8 for imports/from/etc.",
+        "JWT fully customized.",
+        "JWT custom header.",
+        "JWT algorithm updated. (RS256)",
+        "JWT private/public key generated."
     ]
 }

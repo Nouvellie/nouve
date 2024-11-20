@@ -22,6 +22,30 @@
             "changes": [
                 "Update version script added."
             ]
+        },
+        {
+            "current_version": "0.0.4",
+            "date": "2024-11-20",
+            "changes": [
+                "Obtaining the list of champions with their complete information.",
+                "Obtaining patch notes versions.",
+                "Functions to correctly save champions and their errors in the database.",
+                "Champion, Apilog models.",
+                "Fix on signup urls name.",
+                "Custom runserver port added."
+            ]
+        },
+        {
+            "current_version": "0.0.5",
+            "date": "2024-11-20",
+            "changes": [
+                "Makemigrations and migrate applied.",
+                "Pep8 for imports/from/etc.",
+                "JWT fully customized.",
+                "JWT custom header.",
+                "JWT algorithm updated. (RS256)",
+                "JWT private/public key generated."
+            ]
         }
     ]
 }
