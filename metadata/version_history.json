@@ -46,6 +46,13 @@
                 "JWT algorithm updated. (RS256)",
                 "JWT private/public key generated."
             ]
+        },
+        {
+            "current_version": "0.0.6",
+            "date": "2024-11-26",
+            "changes": [
+                "Summoner updated"
+            ]
         }
     ]
 }

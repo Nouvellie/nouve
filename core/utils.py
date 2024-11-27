@@ -39,6 +39,7 @@ def save_champion(champs, version):
         champions_list_data.append(core_data)
     
     df = pd.DataFrame(champions_list_data).sort_values(by='key', ascending=True)
+    print(df)
     for _, row in df.iterrows():
         Champion.objects.update_or_create(
             key=row['key'],  
